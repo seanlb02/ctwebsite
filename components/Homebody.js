@@ -5,15 +5,41 @@ import React, { useState } from "react";
 
 
 const Homepage = () => {
-    const [style, setStyle] = useState(styles.audioPlayer);
+    const [audiostyle, setStyle] = useState(styles.audioPlayer);
 
     const changeStyle = () => {
-        if (style==styles.audioPlayer){
+        if (audiostyle==styles.audioPlayer){
         setStyle(styles.dropdownPlayer)};
-        if (style==styles.dropdownPlayer){
+        if (audiostyle==styles.dropdownPlayer){
         setStyle(styles.audioPlayer)}
-        
+
     }
+    const [content, Toggle] = useState(styles.CT007Content)
+    const [TrackList, Drop] = useState(styles.songContainer)
+    const [artwork, Slide] = useState(styles.artworkContainer)
+    const [title, Darkmode] = useState(styles.releaseTitle)
+
+    const openClose = () => {
+        if (title==styles.releaseTitle){
+            Darkmode(styles.releaseTitleClicked)};
+        if (TrackList==styles.songContainer){
+            Drop(styles.songContainerOpen)};
+        if (content==styles.CT007Content){
+            Toggle(styles.CT007ContentOpen)};
+        if (artwork==styles.artworkContainer){
+            Slide(styles.artworkContainerOpen)};
+
+            // reverse
+        
+        if(TrackList==styles.songContainerOpen){
+            Drop(styles.songContainer)};
+        if (content==styles.CT007ContentOpen){
+            Toggle(styles.CT007Content)};
+        if (artwork==styles.artworkContainerOpen){
+            Slide(styles.artworkContainer)};
+        
+        }
+    
 
   return (
       <div className={styles.pageContainer}>
@@ -24,15 +50,17 @@ const Homepage = () => {
       </Head>
         {/* release 1 */}
           <div className={styles.Release}>
-            <h2 className={styles.releaseTitle}>CT007
+            <h2 className={title} onClick={openClose}>CT007
             
-                <input className={styles.CT007toggle} type="checkbox"/>
-                <label htmlFor={styles.CT007toggle}></label>
+                <input id="navArrow" name="navArrow" className={styles.CT007toggle} type="checkbox"/>
+                <label htmlFor="navArrow" className={styles.arrow} >&gt;</label>
+               
             </h2>
-            <content className={styles.CT007Content}>
-                <div className={styles.songContainer}>
+            
+            <content className={content}>
+                <div className={TrackList}>
                     <div className={styles.trackContainer} onClick={changeStyle}>
-                        <audio controls className={style} src="/TEX86.mp3">
+                        <audio controls className={audiostyle} src="/TEX86.mp3">
                             {/* <source src="/TEX86.mp3" type = "audio/mpeg"/> */}
                         </audio>
                         
@@ -42,7 +70,7 @@ const Homepage = () => {
                         
                     </div>
                     <div className={styles.trackContainer}>
-                        <audio controls className={style}>
+                        <audio controls className={audiostyle}>
                             <source src="" type = "audio/mpeg"/>
                         </audio>
                         <div className={styles.trackText}>
@@ -50,7 +78,7 @@ const Homepage = () => {
                         </div>
                     </div>
                 </div>
-                <div className={styles.artworkContainer}>
+                <div className={artwork}>
                     <svg  src=""/>
                 </div>
             </content>
@@ -61,7 +89,7 @@ const Homepage = () => {
             <content className={styles.CT006Content}>
                 <div className={styles.songContainer}>
                     <div className={styles.trackContainer} onClick={changeStyle}>
-                        <audio controls className={style} src="/TEX86.mp3">
+                        <audio controls className={audiostyle} src="/TEX86.mp3">
                             {/* <source src="/TEX86.mp3" type = "audio/mpeg"/> */}
                         </audio>
                         

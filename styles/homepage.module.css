@@ -1,6 +1,7 @@
 .pageContainer {
     /* padding-left:7%; */
     border-left:solid black;
+    min-height:100vh;
     /* display:flex; */
     
 }

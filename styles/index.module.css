@@ -1,7 +1,7 @@
 .pageContainer{
   background-color: red;
   box-sizing: border-box;
-  height:100vh;
+  height:100%;
   min-width:100%;
   padding-left:7%;
 }
@@ -35,17 +35,52 @@
 .releaseTitle:hover {
   background-color: black;
   color:white;
+  transition:background-color 1s, color 0.4s;;
+
 }
 
+.releaseTitleClicked {
+  font-family:mono;
+  padding-left:10%;
+  padding-bottom:1%;
+  border-bottom:solid black;
+  border-left:solid black;
+
+  padding-top:4%;
+  z-index:99;
+  margin:0;
+  background-color: black;
+  color:white;
+}
+
+.arrow{
+  color:white;
+}
+
+.CT007toggle {
+  display:none;
+}
 
 .CT007Content {
   display:flex;
   flex-direction: row-reverse;
-  height:0;
+  max-height:0;
   overflow:hidden;
+  transition:max-height 1s;
+  transition-delay:1s;
   /* animation: open-CT007 1s linear forwards;
   animation-delay:0.2s; */
 }
+
+.CT007ContentOpen{
+  display:flex;
+  flex-direction: row-reverse;
+  max-height:500px;
+  overflow:hidden;
+  transition: max-height 1s;
+  transition-delay: 0.3s;
+}
+
 @keyframes open-CT007 {
   from{height:0;}
   to{height:auto}
@@ -60,14 +95,34 @@
   animation-delay:0.2s;
 }
 
+
+
 .songContainer{
   display:flex;
   flex:1;
   flex-direction: column;
   justify-content: flex-start;
   align-content: center;
-  height:0;
+  max-height:0;
   overflow:hidden;
+  padding-top:10%;
+  border-left:solid black;
+  transition: max-height 1s;
+  transition-delay: 1s;
+}
+
+.songContainerOpen {
+  display:flex;
+  flex:1;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: center;
+  max-height:500px;
+  overflow:visible;
+  border-left: solid black;
+  padding-top: 10%;
+  transition: max-height 1s;
+  transition-delay: 0.5s;
 }
 
 @keyframes CT007-dropdown {
@@ -77,31 +132,43 @@
 
 /* make a CT007 toggle switch which activates these when checked */
 
-.CT007toggle:checked{
-  border:solid black;
+.CT007toggle:checked {
+  outline:solid yellow;
+  position:relative;
+  transform: translateX(6500%);
+  transition: transform 1s;
 }
 
-.CT007toggle:checked ~ .songContainer{
+.CT007toggle:not(:checked) {
+  outline:solid yellow;
+  position:relative;
+  transform: translateX(0);
+  transition: transform 1s;
+}
+
+.CT007toggle:checked ~ * .songContainer{
+  
+ 
   animation: CT007-dropdown 1s linear forwards;
   animation-delay:0.5s;
 }
 
-.CT007toggle:checked ~ .CT007Content{
-animation: open-CT007 1s linear forwards;
-  animation-delay:0.2s;
+.CT007toggle:checked + .CT007Content{
+  height:auto;
+  overflow:visible;  
+  padding-top:10%;
+  transition: height 1s;
+
+  /* animation: open-CT007 1s linear forwards;
+  animation-delay:0.4s; */
 }
 
-.CT007toggle:checked ~ .artworkContainer{
+.CT007toggle:checked ~ * .artworkContainer{
 animation: CT007-pullover 1s linear forwards;
 animation-delay:2s;
 }
 
 /* animations for CT007 */
-
-
-
-
-
 
 
 .trackContainer {
@@ -122,19 +189,34 @@ animation-delay:2s;
 
 }
 
-.artworkContainer {
+/* .artworkContainer {
   display:none;
-}
+} */
 
 .artworkContainer {
   display:flex;
   flex:2;
-  transform: translateX(150%);
+  transform: translate3d(150%,0,0);
   background-color: white;
   min-height:50vw;
   max-height:60vw;
   width:auto;
   z-index:1;
+  transition: transform 1s;
+  transition-delay:0s;
+}
+
+.artworkContainerOpen{
+  display:flex;
+  flex:2;
+  background-color: white;
+  min-height:50vw;
+  max-height:auto;
+  width:auto;
+  z-index:1;
+  transform: translate3d(0,0,0);
+  transition: transform 1s;
+  transition-delay:2s;
 }
 
 @keyframes CT007-pullover {
@@ -153,6 +235,7 @@ animation-delay:2s;
 
 .audioPlayer:hover {
   opacity: 1;
+  transition: opacity 0.5s;
 }
 
 .audioPlayer{
@@ -163,6 +246,7 @@ animation-delay:2s;
 
 .trackText:hover + .audioPlayer {
   opacity:1;
+  transition: opacity 0.5s;
   /* transform: translateY(100%); */
   max-width: 50vw;
 }
