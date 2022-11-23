@@ -2,7 +2,24 @@ html,
 body {
   padding: 0;
   margin: 0;
+  overflow-x:hidden;
 
+}
+
+.linkList {
+  font-family:'Sono', sans-serif;
+  color:rgb(255, 232, 232);
+   mix-blend-mode: difference;
+   font-weight: 400;
+  font-size: 1rem;
+  padding-right:5%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap:13%;
+  list-style: none;
+ 
 }
 
 a {

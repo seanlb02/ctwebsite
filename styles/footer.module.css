@@ -1,0 +1,12 @@
+.footerContainer{
+    display:flex;
+    min-height:300px;
+    max-height:500px;
+    width:100%;
+   
+    bottom:0;
+    left:0;
+    right:0;
+    background-color:black;
+
+}

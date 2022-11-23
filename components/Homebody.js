@@ -6,7 +6,7 @@ import React, { useState } from "react";
 
 const Homepage = () => {
     const [audiostyle, setStyle] = useState(styles.audioPlayer);
-
+    // mobile audio player dropdown on click - (desktop players on hover)
     const changeStyle = () => {
         if (audiostyle==styles.audioPlayer){
         setStyle(styles.dropdownPlayer)};
@@ -18,8 +18,11 @@ const Homepage = () => {
     const [TrackList, Drop] = useState(styles.songContainer)
     const [artwork, Slide] = useState(styles.artworkContainer)
     const [title, Darkmode] = useState(styles.releaseTitle)
+    const [arrow, Unlock] = useState(styles.arrow)
 
     const openClose = () => {
+        if (arrow==styles.arrow){
+            Unlock(styles.arrowChecked);}
         if (title==styles.releaseTitle){
             Darkmode(styles.releaseTitleClicked)};
         if (TrackList==styles.songContainer){
@@ -31,6 +34,10 @@ const Homepage = () => {
 
             // reverse
         
+        if (arrow==styles.arrowChecked){
+            Unlock(styles.arrow);}
+        if (title==styles.releaseTitleClicked){
+            Darkmode(styles.releaseTitle)};
         if(TrackList==styles.songContainerOpen){
             Drop(styles.songContainer)};
         if (content==styles.CT007ContentOpen){
@@ -50,12 +57,12 @@ const Homepage = () => {
       </Head>
         {/* release 1 */}
           <div className={styles.Release}>
-            <h2 className={title} onClick={openClose}>CT007
-            
-                <input id="navArrow" name="navArrow" className={styles.CT007toggle} type="checkbox"/>
-                <label htmlFor="navArrow" className={styles.arrow} >&gt;</label>
-               
-            </h2>
+            <div className={title} onClick={openClose}>CT007
+                {/* <div className={arrow}><Image src="/sidearrow.png" height={35} width={35}/></div> */}
+                <div className={arrow}>&gt;</div>
+                <div className={arrow}>&gt;</div>
+                <div className={arrow}>&gt;</div>
+            </div>
             
             <content className={content}>
                 <div className={TrackList}>
@@ -85,9 +92,9 @@ const Homepage = () => {
           </div>
         {/* Release 2 */}
         <div className={styles.Release}>
-            <h2 className={styles.releaseTitle}>CT006</h2>
-            <content className={styles.CT006Content}>
-                <div className={styles.songContainer}>
+            <h2 className={title} onClick={openClose}>CT006</h2>
+            <content className={content}>
+                <div className={TrackList}>
                     <div className={styles.trackContainer} onClick={changeStyle}>
                         <audio controls className={audiostyle} src="/TEX86.mp3">
                             {/* <source src="/TEX86.mp3" type = "audio/mpeg"/> */}
@@ -99,7 +106,7 @@ const Homepage = () => {
                         
                     </div>
                     <div className={styles.trackContainer}>
-                        <audio controls className={styles.audioPlayer}>
+                        <audio controls className={audiostyle}>
                             <source src="" type = "audio/mpeg"/>
                         </audio>
                         <div className={styles.trackText}>
@@ -107,7 +114,7 @@ const Homepage = () => {
                         </div>
                     </div>
                 </div>
-                <div className={styles.artworkContainer}>
+                <div className={artwork}>
                     <svg  src=""/>
                 </div>
             </content>
