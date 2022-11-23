@@ -1,7 +1,8 @@
 .pageContainer {
-    background-color: red;
+    background-color: white;
     height:100vh;
     width:100vw;
+    justify-content: right;
 }
 
 
@@ -10,5 +11,16 @@
     padding:3%;
     font-family:'sono', san-serif;
     font-size: 3rem;
+    z-index:100;
+    text-align: right;
+    justify-content: right;
 }
 
+.videoOverlay {
+    display:flex;
+    position:absolute;
+    -o-filter: blur(50px);
+    filter: blur(45px);
+    width:100vw;
+    height:100vh;
+}

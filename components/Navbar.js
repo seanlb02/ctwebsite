@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link';
 import styles from '../styles/navbar.module.css'
 import React, { useState } from "react";
 
@@ -8,7 +9,7 @@ export default function Navbar() {
 
         <div className ={styles.navbarContainer}>
             <ul className={styles.linkList}>
-                <li className={styles.link}><a href="/contact" target="_blank">Contact</a></li>
+                <li className={styles.link}><Link href="/contact" >Contact</Link></li>
                 <li className={styles.link}>Things</li>
                 <li className={styles.link}>Press</li>
                 <li className={styles.link}>Releases</li>

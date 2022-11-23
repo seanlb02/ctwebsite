@@ -28,7 +28,7 @@ export default function Header() {
         <div className={styles.headerContainer}>
             <div className={video}>
             <video  playsInline autoPlay="true" loop="loop" muted="true">
-                <source src="/manlaughing.mp4" type="video/mp4"/>
+                <source src="/manwalkcounting.mp4" type="video/mp4"/>
                        
             </video>
             </div> 
