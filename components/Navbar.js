@@ -8,7 +8,7 @@ export default function Navbar() {
 
         <div className ={styles.navbarContainer}>
             <ul className={styles.linkList}>
-                <li className={styles.link}>Contact</li>
+                <li className={styles.link}><a href="/contact" target="_blank">Contact</a></li>
                 <li className={styles.link}>Things</li>
                 <li className={styles.link}>Press</li>
                 <li className={styles.link}>Releases</li>

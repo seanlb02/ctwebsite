@@ -1,0 +1,14 @@
+.pageContainer {
+    background-color: red;
+    height:100vh;
+    width:100vw;
+}
+
+
+.contactTitle {
+    display:flex;
+    padding:3%;
+    font-family:'sono', san-serif;
+    font-size: 3rem;
+}
+
