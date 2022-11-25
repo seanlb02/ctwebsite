@@ -1,12 +1,41 @@
 .footerContainer{
     display:flex;
+    flex-direction:column;
     min-height:300px;
     max-height:500px;
     width:100%;
-   
+    flex:flex-end;
     bottom:0;
     left:0;
     right:0;
     background-color:black;
 
 }
+
+.socialIcons {
+
+display:flex;
+align-items: center;
+flex:flex-end;
+margin-left: 4%;
+margin-top:16%;
+gap: 2%;
+width:90vw;
+height:10%;
+justify-content: right;
+
+
+}
+
+.icon {
+    fill:white;
+    height:auto;
+    width:auto;
+    border-radius: 50%;
+    border:solid black;
+    cursor:pointer;
+}
+
+.svg {
+    fill: white;
+  }

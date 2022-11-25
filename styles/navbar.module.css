@@ -1,8 +1,7 @@
 .navbarContainer {
-    
     width: 100vh;
     max-height:100px;
-    min-height:80px;
+    min-height:55px;
     top:0;
     left:0;
     transform-origin: left top;
@@ -10,7 +9,6 @@
     position:fixed;
     background-color: rgb(255, 232, 232);
     mix-blend-mode: difference;
-
 }
 
 @media screen and (max-width:1200px) {
@@ -42,7 +40,6 @@
     align-content: center;
     gap:13%;
     list-style: none;
-   
 }
 
 .link:hover {

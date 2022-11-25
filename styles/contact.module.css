@@ -11,16 +11,18 @@
     padding:3%;
     font-family:'sono', san-serif;
     font-size: 3rem;
-    z-index:100;
+    z-index:2;
     text-align: right;
     justify-content: right;
 }
 
 .videoOverlay {
     display:flex;
+    z-index:1;
     position:absolute;
     -o-filter: blur(50px);
     filter: blur(45px);
-    width:100vw;
+    width:80vw;
     height:100vh;
+    margin-right:8%;
 }

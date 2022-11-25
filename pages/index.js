@@ -7,6 +7,7 @@ import Navbar from '../components/Navbar'
 import styles from '../styles/homepage.module.css'
 import useScrollSnap from 'react-use-scroll-snap'
 import { useRef } from "react";
+import Homebody from '../components/Homebody'
 
 export default function Home() {
 
@@ -15,6 +16,7 @@ export default function Home() {
     <div className={styles.pageContainer}>
     <Header/>
     <Navbar/>
+    <Homebody/>
     <Releases/>
     <Footer/>
     </div>

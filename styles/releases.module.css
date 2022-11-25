@@ -152,7 +152,7 @@
   padding-top:10%;
   border-left:solid black;
   transition: max-height 1s;
-  transition-delay: 1s;
+  transition-delay: 0.8s;
 }
 
 .songContainerOpen {
