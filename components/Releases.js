@@ -73,7 +73,7 @@ const Releases = () => {
                         </audio>
                         
                         <div className={styles.trackText}>
-                            <h4>You'll Never Get Rich</h4>
+                            <h4>You&apos;ll Never Get Rich</h4>
                         </div>
                         
                     </div>

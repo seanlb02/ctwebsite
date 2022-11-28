@@ -6,9 +6,9 @@ import React, { useState } from "react";
 export default function Contactpage () {
     return (
 
-        <Head>
-             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-        </Head>
+        // <Head>
+        //      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+        // </Head>
 
         <div className={styles.pageContainer}>
             <div className={styles.videoOverlay}>
@@ -18,9 +18,6 @@ export default function Contactpage () {
             </video>
             </div> 
             <div className={styles.contactTitle}>Contact</div>
-
-
-
         </div>
     )
 }

@@ -34,11 +34,11 @@ export default function Header() {
             </div> 
             <div onClick={changeBackground} className={background}>
             <div className={styles.snakeLine}></div>
-            <p className={styles.heroText}>On and off since 2013 and probably never again. records and tapes from grey people, j albert, elite athlete, palace, 2200, gutnose, loiic, aspley and text86.</p>
+            <p className={styles.heroText}>On and off since 2013 and probably never again. records and tapes from grey people, j albert, elite athlete, palace, 2200, gutnose, loicc, aspley and text86.</p>
             
             
             </div>
-            <p className={styles.button} onClick={changeBackground}>Don't click</p>
+            <p className={styles.button} onClick={changeBackground}>Don&apos;t click</p>
             
 
         </div>

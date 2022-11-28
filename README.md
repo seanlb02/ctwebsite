@@ -1,3 +1,5 @@
-## Narma - Your pocket-sized support network 
+## Documentation
 
-Narma is a one-way messaging app where users are sent a range of automated yet personalised content via virtual profiles who comprise the <em>Narma Network</em>.
+This is the static site for local small press record label Cult Trip. 
+
+<a href="https://ctwebsite-afyfie07b-seanlb02.vercel.app/" target="_blank">Preview</a>
