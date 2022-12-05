@@ -1,5 +1,6 @@
 .navbarContainer {
     width: 100vh;
+    /* z-index:9; */
     max-height:100px;
     min-height:55px;
     top:0;

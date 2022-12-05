@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/releases.module.css'
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 
 const Releases = () => {
@@ -20,32 +20,85 @@ const Releases = () => {
     const [title, Darkmode] = useState(styles.releaseTitle)
     const [arrow, Unlock] = useState(styles.arrow)
 
-    const openClose = () => {
-        if (arrow==styles.arrow){
-            Unlock(styles.arrowChecked);}
-        if (title==styles.releaseTitle){
-            Darkmode(styles.releaseTitleClicked)};
-        if (TrackList==styles.songContainer){
-            Drop(styles.songContainerOpen)};
-        if (content==styles.CT007Content){
-            Toggle(styles.CT007ContentOpen)};
-        if (artwork==styles.artworkContainer){
-            Slide(styles.artworkContainerOpen)};
+    // const [_document, set_document] = React.useState(null)
+    // React.useEffect(() => {
+    //     set_document(document)
+    // })
 
-            // reverse
-        
-        if (arrow==styles.arrowChecked){
-            Unlock(styles.arrow);}
-        if (title==styles.releaseTitleClicked){
-            Darkmode(styles.releaseTitle)};
-        if(TrackList==styles.songContainerOpen){
-            Drop(styles.songContainer)};
-        if (content==styles.CT007ContentOpen){
-            Toggle(styles.CT007Content)};
-        if (artwork==styles.artworkContainerOpen){
-            Slide(styles.artworkContainer)};
-        
+    // const [defaultarrow, Swap] = useState(styles.defaultarrow)
+    // const [defaulttitle, Swap]  = useState(styles.defaultreleaseTitle)
+    // const [defaultcontent, Swap] = useState(styles.defaultCT007Content)
+    // const [defaultsongcontainer, Swap] = useState(styles.defaultsongContainer)
+   
+    const activateCT007 = () => {
+    // if (typeof window !== "undefined"){
+    //     let CT007 = document.querySelectorAll('#CT007');
+    //     const arr = Array.from(CT007);
+         
+    //     const map = arr.map(item => );
+    //     return map;
+    // }
+}
+    // var CT007all = [...CT007]
+    if (typeof window !== "undefined"){
+        var CT006 = document.querySelectorAll('#CT006');
         }
+    
+
+
+
+    const openClose = () => {
+
+        // if (typeof window !== "undefined"){
+        //     let CT007 = document.querySelectorAll('#CT007');
+        //     const arr = Array.from(CT007);
+             
+        //     const map = arr.map(function(item){
+                if (arrow==styles.arrow){
+                    Unlock(styles.arrowChecked);}
+                if (title==styles.releaseTitle){
+                    Darkmode(styles.releaseTitleClicked)};
+                if (TrackList==styles.songContainer){
+                    Drop(styles.songContainerOpen)};
+                if (content==styles.CT007Content){
+                    Toggle(styles.CT007ContentOpen)};
+                if (artwork==styles.artworkContainer){
+                    Slide(styles.artworkContainerOpen)};
+        
+                //     // reverse
+                
+                if (arrow==styles.arrowChecked){
+                    Unlock(styles.arrow);}
+                if (title==styles.releaseTitleClicked){
+                    Darkmode(styles.releaseTitle)};
+                if(TrackList==styles.songContainerOpen){
+                    Drop(styles.songContainer)};
+                if (content==styles.CT007ContentOpen){
+                    Toggle(styles.CT007Content)};
+                if (artwork==styles.artworkContainerOpen){
+                    Slide(styles.artworkContainer)};
+                
+                }
+            
+            // )};
+         
+         
+           
+        
+        
+
+        
+
+
+        
+
+        // const activateCT007 = () => {    
+        //     for (let x in CT007){
+        //         openClose(CT007)
+        //     }
+        // }
+            
+        
     
 
   return (
@@ -56,49 +109,48 @@ const Releases = () => {
         <link rel="icon" href="/favicon.ico"/>
       </Head>
         {/* release 1 */}
-          <div className={styles.Release}>
-            <div className={styles.releasesHeader}>Releases (2014-2018, 2022)</div>
-            <div className={title} onClick={openClose}>CT007
+          <div className={styles.Release} id="CT007">
+            <div className={styles.releasesHeader} id="CT007">Releases (2014-2018, 2022)</div>
+            <div className={title} onClick={openClose} id="CT007">CT007
                 {/* <div className={arrow}><Image src="/sidearrow.png" height={35} width={35}/></div> */}
-                <div className={arrow}>&gt;</div>
-                <div className={arrow}>&gt;</div>
-                <div className={arrow}>&gt;</div>
+                <div className={arrow} id="CT007">&gt;</div>
+                <div className={arrow} id="CT007">&gt;</div>
+                <div className={arrow} id="CT007">&gt;</div>
             </div>
             
-            <content className={content}>
-                <div className={TrackList}>
-                    <div className={styles.trackContainer} onClick={changeStyle}>
-                        <audio controls className={audiostyle} src="/TEX86.mp3">
+            <content className={content} id="CT007">
+                <div className={TrackList} id="CT007">
+                    <div className={styles.trackContainer} onClick={changeStyle} id="CT007">
+                        <audio controls className={audiostyle} src="/TEX86.mp3" id="CT007">
                             {/* <source src="/TEX86.mp3" type = "audio/mpeg"/> */}
                         </audio>
                         
-                        <div className={styles.trackText}>
+                        <div className={styles.trackText} id="CT007">
                             <h4>You&apos;ll Never Get Rich</h4>
                         </div>
                         
                     </div>
-                    <div className={styles.trackContainer}>
-                        <audio controls className={audiostyle}>
+                    <div className={styles.trackContainer} id="CT007">
+                        <audio controls className={audiostyle} id="CT007">
                             <source src="" type = "audio/mpeg"/>
                         </audio>
-                        <div className={styles.trackText}>
+                        <div className={styles.trackText} id="CT007">
                                 <h4>Death by Dole</h4>
                         </div>
                     </div>
                 </div>
-                <div className={artwork}>
+                <div className={artwork} id="CT007">
                     <svg  src=""/>
                 </div>
             </content>
           </div>
         {/* Release 2 */}
         <div className={styles.Release}>
-            <div className={title} onClick={openClose}>CT006
-            <div className={arrow}>&gt;</div>
-            <div className={arrow}>&gt;</div>
-            <div className={arrow}>&gt;</div>
-
-        </div>
+            <div className={title} >CT006
+                <div className={arrow}>&gt;</div>
+                <div className={arrow}>&gt;</div>
+                <div className={arrow}>&gt;</div>
+            </div>
             <content className={content}>
                 <div className={TrackList}>
                     <div className={styles.trackContainer} onClick={changeStyle}>
@@ -121,12 +173,49 @@ const Releases = () => {
                     </div>
                 </div>
                 <div className={artwork}>
-                    <svg  src=""/>
+                    <Image className={styles.CT006Cover} src="/loiicCover.jpg" height="300" width="300"/>
                 </div>
             </content>
-          </div>       
-        {/*closed page container*/}
-      </div>
+        </div>       
+
+        {/* Release 3 */}
+        <div className={styles.Release}>
+                    <div className={title} >CT005
+                        <div className={arrow}>&gt;</div>
+                        <div className={arrow}>&gt;</div>
+                        <div className={arrow}>&gt;</div>
+                    </div>
+                    <content className={content}>
+                        <div className={TrackList}>
+                            <div className={styles.trackContainer} onClick={changeStyle}>
+                                <audio controls className={audiostyle} src="/TEX86.mp3">
+                                    {/* <source src="/TEX86.mp3" type = "audio/mpeg"/> */}
+                                </audio>
+                                
+                                <div className={styles.trackText}>
+                                    <h4>Track One</h4>
+                                </div>
+                                
+                            </div>
+                            <div className={styles.trackContainer}>
+                                <audio controls className={audiostyle}>
+                                    <source src="" type = "audio/mpeg"/>
+                                </audio>
+                                <div className={styles.trackText}>
+                                        <h4>Track Two</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div className={artwork}>
+                            <Image className={styles.CT006Cover} src="/gutnoseCover.jpg" height="300" width="300"/>
+                        </div>
+                    </content>
+                </div>   
+
+
+
+
+        </div>
      
 
   );

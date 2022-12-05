@@ -13,7 +13,7 @@ export default function Navbar() {
                 <li className={styles.link}>Things</li>
                 <li className={styles.link}>Press</li>
                 <li className={styles.link}>Releases</li>
-                <li className={styles.link}>Home</li>
+                <li className={styles.link}><Link href="/">Home</Link></li>
             </ul>
 
         </div>

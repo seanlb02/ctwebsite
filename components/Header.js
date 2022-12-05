@@ -33,7 +33,7 @@ export default function Header() {
             </video>
             </div> 
             <div onClick={changeBackground} className={background}>
-            <div className={styles.snakeLine}></div>
+            {/* <div className={styles.snakeLine}></div> */}
             <p className={styles.heroText}>On and off since 2013 and probably never again. records and tapes from grey people, j albert, elite athlete, palace, 2200, gutnose, loicc, aspley and text86.</p>
             
             
