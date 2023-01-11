@@ -18,6 +18,7 @@ export default function Contactpage () {
             </video>
             </div> 
             <div className={styles.contactTitle}>Contact</div>
+            <div className={styles.email}>culttrip<br></br>records<br></br>@live.com</div>
         </div>
     )
 }
