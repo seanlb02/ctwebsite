@@ -6,29 +6,46 @@
     /* margin-left:4%; */
     /* background-color:rgb(255, 232, 232);; */
     background-color: white;
-   
+   position:inline-block;
 }
 
 .leftScroll {
     display:flex;
-    width: 35vw;
+    flex-direction: column;
+    width: 30%;
+    height:auto;
     z-index: 1;
+    padding-top:10%;
     position:relative;
+    scrollbar-width: none;
+    overflow-x:visible;
 }
 
 .rightScroll {
     display:flex;
-    width: 65vw;
+    flex-direction: column;
+    gap: 30%;
+    width: 70vw;
+    height:auto;
     z-index: 20;
     position:relative;
+    padding-top:22%;
+    overflow-y: scroll;
+    scrollbar-width: none;
 }
 
 .content {
     position: absolute;
     right: -15%;
-    border: 10px;
-    border-color:black;
     height:200px;
     width:300px;
     overflow: visible;
+    border: solid 2px black;
+}
+
+.image {
+
+
+    margin-top:10%;
+    margin-left:25%;
 }
