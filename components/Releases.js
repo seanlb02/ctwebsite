@@ -110,12 +110,17 @@ const Releases = () => {
       </Head>
         {/* release 1 */}
           <div className={styles.Release} id="CT007">
-            <div className={styles.releasesHeader} id="CT007">Releases (2014-2018, 2022)</div>
-            <div className={title} onClick={openClose} id="CT007">CT007
+              <div className={styles.releaseTitleContainer}>
+                <div className={styles.releasesHeader} id="CT007">Releases (2014-2018, 2022)</div>
+                <img className={styles.expand} onClick={openClose} src='/sidearrow.png' height={50} width={50}/>
+              </div>
+            <div>
+            <div className={title} onClick={openClose} id="CT007">CT007</div>
                 {/* <div className={arrow}><Image src="/sidearrow.png" height={35} width={35}/></div> */}
+                {/* <div className={arrow} id="CT007">&gt;</div>
                 <div className={arrow} id="CT007">&gt;</div>
                 <div className={arrow} id="CT007">&gt;</div>
-                <div className={arrow} id="CT007">&gt;</div>
+             */}
             </div>
             
             <content className={content} id="CT007">
@@ -147,9 +152,9 @@ const Releases = () => {
         {/* Release 2 */}
         <div className={styles.Release}>
             <div className={title} >CT006
+                {/* <div className={arrow}>&gt;</div>
                 <div className={arrow}>&gt;</div>
-                <div className={arrow}>&gt;</div>
-                <div className={arrow}>&gt;</div>
+                <div className={arrow}>&gt;</div> */}
             </div>
             <content className={content}>
                 <div className={TrackList}>
@@ -181,9 +186,9 @@ const Releases = () => {
         {/* Release 3 */}
         <div className={styles.Release}>
                     <div className={title} >CT005
+                        {/* <div className={arrow}>&gt;</div>
                         <div className={arrow}>&gt;</div>
-                        <div className={arrow}>&gt;</div>
-                        <div className={arrow}>&gt;</div>
+                        <div className={arrow}>&gt;</div> */}
                     </div>
                     <content className={content}>
                         <div className={TrackList}>
@@ -212,8 +217,137 @@ const Releases = () => {
                     </content>
                 </div>   
 
+                <div className={styles.Release}>
+                    <div className={title} >CT004
+                        {/* <div className={arrow}>&gt;</div>
+                        <div className={arrow}>&gt;</div>
+                        <div className={arrow}>&gt;</div> */}
+                    </div>
+                    <content className={content}>
+                        <div className={TrackList}>
+                            <div className={styles.trackContainer} onClick={changeStyle}>
+                                <audio controls className={audiostyle} src="/TEX86.mp3">
+                                    {/* <source src="/TEX86.mp3" type = "audio/mpeg"/> */}
+                                </audio>
+                                
+                                <div className={styles.trackText}>
+                                    <h4>Track One</h4>
+                                </div>
+                                
+                            </div>
+                            <div className={styles.trackContainer}>
+                                <audio controls className={audiostyle}>
+                                    <source src="" type = "audio/mpeg"/>
+                                </audio>
+                                <div className={styles.trackText}>
+                                        <h4>Track Two</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div className={artwork}>
+                            <Image className={styles.CT006Cover} src="/2200Cover.jpg" height="300" width="300"/>
+                        </div>
+                    </content>
+                </div>  
 
+                <div className={styles.Release}>
+                    <div className={title} >CT003
+                        {/* <div className={arrow}>&gt;</div>
+                        <div className={arrow}>&gt;</div>
+                        <div className={arrow}>&gt;</div> */}
+                    </div>
+                    <content className={content}>
+                        <div className={TrackList}>
+                            <div className={styles.trackContainer} onClick={changeStyle}>
+                                <audio controls className={audiostyle} src="/TEX86.mp3">
+                                    {/* <source src="/TEX86.mp3" type = "audio/mpeg"/> */}
+                                </audio>
+                                
+                                <div className={styles.trackText}>
+                                    <h4>Track One</h4>
+                                </div>
+                                
+                            </div>
+                            <div className={styles.trackContainer}>
+                                <audio controls className={audiostyle}>
+                                    <source src="" type = "audio/mpeg"/>
+                                </audio>
+                                <div className={styles.trackText}>
+                                        <h4>Track Two</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div className={artwork}>
+                            <Image className={styles.CT006Cover} src="/eliteCover.jpg" height="300" width="300"/>
+                        </div>
+                    </content>
+                </div>  
 
+                <div className={styles.Release}>
+                    <div className={title} >CT002
+                        {/* <div className={arrow}>&gt;</div>
+                        <div className={arrow}>&gt;</div>
+                        <div className={arrow}>&gt;</div> */}
+                    </div>
+                    <content className={content}>
+                        <div className={TrackList}>
+                            <div className={styles.trackContainer} onClick={changeStyle}>
+                                <audio controls className={audiostyle} src="/TEX86.mp3">
+                                    {/* <source src="/TEX86.mp3" type = "audio/mpeg"/> */}
+                                </audio>
+                                
+                                <div className={styles.trackText}>
+                                    <h4>Track One</h4>
+                                </div>
+                                
+                            </div>
+                            <div className={styles.trackContainer}>
+                                <audio controls className={audiostyle}>
+                                    <source src="" type = "audio/mpeg"/>
+                                </audio>
+                                <div className={styles.trackText}>
+                                        <h4>Track Two</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div className={artwork}>
+                            <Image className={styles.CT006Cover} src="/jalbert.jpg" height="300" width="300"/>
+                        </div>
+                    </content>
+                </div>  
+
+                <div className={styles.Release}>
+                    <div className={title} >CT001
+                        {/* <div className={arrow}>&gt;</div>
+                        <div className={arrow}>&gt;</div>
+                        <div className={arrow}>&gt;</div> */}
+                    </div>
+                    <content className={content}>
+                        <div className={TrackList}>
+                            <div className={styles.trackContainer} onClick={changeStyle}>
+                                <audio controls className={audiostyle} src="/TEX86.mp3">
+                                    {/* <source src="/TEX86.mp3" type = "audio/mpeg"/> */}
+                                </audio>
+                                
+                                <div className={styles.trackText}>
+                                    <h4>Track One</h4>
+                                </div>
+                                
+                            </div>
+                            <div className={styles.trackContainer}>
+                                <audio controls className={audiostyle}>
+                                    <source src="" type = "audio/mpeg"/>
+                                </audio>
+                                <div className={styles.trackText}>
+                                        <h4>Track Two</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div className={artwork}>
+                            <Image className={styles.CT006Cover} src="/greyCover.jpg" height="300" width="300"/>
+                        </div>
+                    </content>
+                </div>  
 
         </div>
      
