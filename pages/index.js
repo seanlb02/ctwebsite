@@ -14,9 +14,9 @@ export default function Home() {
   return (
 
     <div className={styles.pageContainer}>
-    <Header/>
+    <Header className="z-40"/>
     <Navbar/>
-    <Homebody/>
+    <Homebody className="z-1"/>
     <Releases/>
     <Footer/>
     </div>
