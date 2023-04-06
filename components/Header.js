@@ -26,6 +26,105 @@ export default function Header() {
     return (
 
         <div className={styles.headerContainer}>
+             <div className={styles.gridContainer} >
+                <div className={styles.gridElement}></div>
+                <div className={styles.gridElement}></div>
+                <div className={styles.gridElement}></div>
+                <div className={styles.gridElement}></div>
+                <div className={styles.gridElement}></div>
+                <div className={styles.gridElement}></div>
+                <div className={styles.gridElement}></div>
+                <div className={styles.gridElement}></div>
+                <div className={styles.gridElement}></div>
+                <div className={styles.gridElement}></div>
+                <div className={styles.gridElement}></div>
+                <div className={styles.gridElement}></div>
+                <div className={styles.gridElement}></div>
+                <div className={styles.gridElement}></div>
+                <div className={styles.gridElement}></div>
+                <div className={styles.gridElement}></div>
+                <div className={styles.gridElement}></div>
+                <div className={styles.gridElement}></div>
+                <div className={styles.gridElement}></div>
+                <div className={styles.gridElement}></div>
+                <div className={styles.gridElement}></div>
+                <div className={styles.gridElement}></div>
+                <div className={styles.gridElement}></div>
+                <div className={styles.gridElement}></div>
+                <div className={styles.gridElement}></div>
+                <div className={styles.gridElement}></div>
+                <div className={styles.gridElement}></div>
+                <div className={styles.gridElement}></div>
+                <div className={styles.gridElement}></div>
+                <div className={styles.gridElement}></div>
+                <div className={styles.gridElement}></div>
+                <div className={styles.gridElement}></div>
+                <div className={styles.gridElement}></div>
+                <div className={styles.gridElement}></div>
+                <div className={styles.gridElement}></div>
+                <div className={styles.gridElement}></div>
+                <div className={styles.gridElement}></div>
+                <div className={styles.gridElement}></div>
+                <div className={styles.gridElement}></div>
+                <div className={styles.gridElement}></div>
+                <div className={styles.gridElement}></div>
+                <div className={styles.gridElement}></div>
+                <div className={styles.gridElement}></div>
+                <div className={styles.gridElement}></div>
+                <div className={styles.gridElement}></div>
+                <div className={styles.gridElement}></div>
+                <div className={styles.gridElement}></div>
+                <div className={styles.gridElement}></div>
+                <div className={styles.gridElement}></div>
+                <div className={styles.gridElement}></div>
+                <div className={styles.gridElement}></div>
+                <div className={styles.gridElement}></div>
+                <div className={styles.gridElement}></div>
+                <div className={styles.gridElement}></div>
+                <div className={styles.gridElement}></div>
+                <div className={styles.gridElement}></div>
+                <div className={styles.gridElement}></div>
+                <div className={styles.gridElement}></div>
+                <div className={styles.gridElement}></div>
+                <div className={styles.gridElement}></div>
+                <div className={styles.gridElement}></div>
+                <div className={styles.gridElement}></div>
+                <div className={styles.gridElement}></div>
+                <div className={styles.gridElement}></div>
+                <div className={styles.gridElement}></div>
+                <div className={styles.gridElement}></div>
+                <div className={styles.gridElement}></div>
+                <div className={styles.gridElement}></div>
+                <div className={styles.gridElement}></div>
+                <div className={styles.gridElement}></div>
+                <div className={styles.gridElement}></div>
+                <div className={styles.gridElement}></div>
+                <div className={styles.gridElement}></div>
+                <div className={styles.gridElement}></div>
+                <div className={styles.gridElement}></div>
+                <div className={styles.gridElement}></div>
+                <div className={styles.gridElement}></div>
+                <div className={styles.gridElement}></div>
+                <div className={styles.gridElement}></div>
+                <div className={styles.gridElement}></div>
+                <div className={styles.gridElement}></div>
+                <div className={styles.gridElement}></div>
+                <div className={styles.gridElement}></div>
+                <div className={styles.gridElement}></div>
+                <div className={styles.gridElement}></div>
+                <div className={styles.gridElement}></div>
+                <div className={styles.gridElement}></div>
+                <div className={styles.gridElement}></div>
+                <div className={styles.gridElement}></div>
+                <div className={styles.gridElement}></div>
+                <div className={styles.gridElement}></div>
+                <div className={styles.gridElement}></div>
+                <div className={styles.gridElement}></div>
+                <div className={styles.gridElement}></div>
+                <div className={styles.gridElement}></div>
+                <div className={styles.gridElement}></div>
+                
+             </div> 
             <div className={video}>
             <video  playsInline autoPlay="true" loop="loop" muted="true">
                 <source src="/manwalkcounting.mp4" type="video/mp4"/>
@@ -34,13 +133,13 @@ export default function Header() {
             </div> 
             <div onClick={changeBackground} className={background}>
             {/* <div className={styles.snakeLine}></div> */}
-            <p className={styles.heroText}>On and off since 2013 and probably never again. records and tapes from grey people, j albert, elite athlete, palace, 2200, gutnose, loicc, aspley and text86.</p>
+            <p className={styles.heroText}>On and off since 2013 and probably never again. records and tapes from grey people, j albert, elite athlete, palace, 2200, gutnose, loicc, aspley and tex86.</p>
             
             
             </div>
             <p className={styles.button} onClick={changeBackground}>Don&apos;t click</p>
             
-
+            
         </div>
     )
 }
